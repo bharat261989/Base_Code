@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B4FB4843-9F30-4257-96A0-80DE060E0EEB</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Base_Code</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>24F3270D-73F7-42FB-819C-767135DE1E9A</key>
+		<string>http://triforce.usc.edu/svn/2014SPRING/MobileGames/drop/Branch/Base_Code/Anush_Base</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Base_Code.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>24F3270D-73F7-42FB-819C-767135DE1E9A</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>24F3270D-73F7-42FB-819C-767135DE1E9A</key>
+		<string>http://triforce.usc.edu/svn/2014SPRING</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>http://triforce.usc.edu/svn/2014SPRING/MobileGames/drop/Branch/Base_Code/Anush_Base/Base_Code.xcodeproj</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>24F3270D-73F7-42FB-819C-767135DE1E9A</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>24F3270D-73F7-42FB-819C-767135DE1E9A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Anush_Base</string>
+		</dict>
+	</array>
+</dict>
+</plist>

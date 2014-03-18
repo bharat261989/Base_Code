@@ -1,0 +1,167 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/2014SPRING/!svn/ver/1071/MobileGames/drop/Branch/Base_Code/Anush_Base/Shaders
+END
+PositionColor.fsh
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/2014SPRING/!svn/ver/1071/MobileGames/drop/Branch/Base_Code/Anush_Base/Shaders/PositionColor.fsh
+END
+Heart.fsh
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/2014SPRING/!svn/ver/1071/MobileGames/drop/Branch/Base_Code/Anush_Base/Shaders/Heart.fsh
+END
+Julia.fsh
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/2014SPRING/!svn/ver/1071/MobileGames/drop/Branch/Base_Code/Anush_Base/Shaders/Julia.fsh
+END
+Blur.fsh
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/2014SPRING/!svn/ver/1071/MobileGames/drop/Branch/Base_Code/Anush_Base/Shaders/Blur.fsh
+END
+PositionTextureColor.vsh
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/2014SPRING/!svn/ver/1071/MobileGames/drop/Branch/Base_Code/Anush_Base/Shaders/PositionTextureColor.vsh
+END
+PositionTexture.vsh
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/2014SPRING/!svn/ver/1071/MobileGames/drop/Branch/Base_Code/Anush_Base/Shaders/PositionTexture.vsh
+END
+Mandelbrot.vsh
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/2014SPRING/!svn/ver/1071/MobileGames/drop/Branch/Base_Code/Anush_Base/Shaders/Mandelbrot.vsh
+END
+Position_uColor.vsh
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/2014SPRING/!svn/ver/1071/MobileGames/drop/Branch/Base_Code/Anush_Base/Shaders/Position_uColor.vsh
+END
+PositionTexture_uColor.fsh
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/2014SPRING/!svn/ver/1071/MobileGames/drop/Branch/Base_Code/Anush_Base/Shaders/PositionTexture_uColor.fsh
+END
+Twist.fsh
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/2014SPRING/!svn/ver/1071/MobileGames/drop/Branch/Base_Code/Anush_Base/Shaders/Twist.fsh
+END
+Plasma.fsh
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/2014SPRING/!svn/ver/1071/MobileGames/drop/Branch/Base_Code/Anush_Base/Shaders/Plasma.fsh
+END
+Monjori.fsh
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/2014SPRING/!svn/ver/1071/MobileGames/drop/Branch/Base_Code/Anush_Base/Shaders/Monjori.fsh
+END
+PositionTextureA8Color.fsh
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/2014SPRING/!svn/ver/1071/MobileGames/drop/Branch/Base_Code/Anush_Base/Shaders/PositionTextureA8Color.fsh
+END
+Flower.vsh
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/2014SPRING/!svn/ver/1071/MobileGames/drop/Branch/Base_Code/Anush_Base/Shaders/Flower.vsh
+END
+PositionColor.vsh
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/2014SPRING/!svn/ver/1071/MobileGames/drop/Branch/Base_Code/Anush_Base/Shaders/PositionColor.vsh
+END
+Heart.vsh
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/2014SPRING/!svn/ver/1071/MobileGames/drop/Branch/Base_Code/Anush_Base/Shaders/Heart.vsh
+END
+Julia.vsh
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/2014SPRING/!svn/ver/1071/MobileGames/drop/Branch/Base_Code/Anush_Base/Shaders/Julia.vsh
+END
+PositionTextureColor.fsh
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/2014SPRING/!svn/ver/1071/MobileGames/drop/Branch/Base_Code/Anush_Base/Shaders/PositionTextureColor.fsh
+END
+PositionTexture.fsh
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/2014SPRING/!svn/ver/1071/MobileGames/drop/Branch/Base_Code/Anush_Base/Shaders/PositionTexture.fsh
+END
+Mandelbrot.fsh
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/2014SPRING/!svn/ver/1071/MobileGames/drop/Branch/Base_Code/Anush_Base/Shaders/Mandelbrot.fsh
+END
+Position_uColor.fsh
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/2014SPRING/!svn/ver/1071/MobileGames/drop/Branch/Base_Code/Anush_Base/Shaders/Position_uColor.fsh
+END
+PositionTexture_uColor.vsh
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/2014SPRING/!svn/ver/1071/MobileGames/drop/Branch/Base_Code/Anush_Base/Shaders/PositionTexture_uColor.vsh
+END
+Twist.vsh
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/2014SPRING/!svn/ver/1071/MobileGames/drop/Branch/Base_Code/Anush_Base/Shaders/Twist.vsh
+END
+Plasma.vsh
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/2014SPRING/!svn/ver/1071/MobileGames/drop/Branch/Base_Code/Anush_Base/Shaders/Plasma.vsh
+END
+Monjori.vsh
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/2014SPRING/!svn/ver/1071/MobileGames/drop/Branch/Base_Code/Anush_Base/Shaders/Monjori.vsh
+END
+PositionTextureA8Color.vsh
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/2014SPRING/!svn/ver/1071/MobileGames/drop/Branch/Base_Code/Anush_Base/Shaders/PositionTextureA8Color.vsh
+END
+Flower.fsh
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/2014SPRING/!svn/ver/1071/MobileGames/drop/Branch/Base_Code/Anush_Base/Shaders/Flower.fsh
+END

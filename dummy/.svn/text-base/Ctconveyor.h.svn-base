@@ -1,0 +1,27 @@
+//
+//  PhysicsSprite.h
+//  SpaceDemo
+//
+//  Created by Muhammed Ali Khan on 3/10/12.
+//  Copyright 2012 Exponere Entertainment. All rights reserved.
+//
+
+
+#import "PhysicsSpritee.h"
+
+@interface Ctconveyor : CCSprite
+{
+    CCSprite *right;
+    CCSprite *left;
+    b2World* world; //weak ref
+    int type;
+	b2Body *body_;
+    b2Fixture *_myFixture;
+	Ctconveyor *sp;// strong ref
+}
+-(void) setPhysicsBody:(b2Body*)body;
+-(b2Body *) getPhysicsBody;
+-(void) setWorld:(b2World*)aWorld;
+-(void ) createphysics:(Ctconveyor *)spt x_co:(float)x y_co:(float)y angle:(int)angle;
+-(b2Fixture *) getb2Fixture;
+@end

@@ -1,0 +1,33 @@
+//
+//  Catapult.h
+//  Catapult
+//
+//  Created by Muhammed Ali Khan on 6/28/11.
+//  Copyright 2011 Exponere Entertainment. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+#import "cocos2d.h"
+#import "Box2D.h"
+
+@interface CTCatapult : CCSprite {
+	@public CCSprite* cannon;
+	CCProgressTimer* arrow;
+    CCSprite* arrow_base;
+	float maxRotation;
+	float minRotation;
+	CGPoint dropPoint;
+    float maxForce, minForce;
+    
+}
+-(void)setTapPoint:(CGPoint)loc;
+-(void)registerDropPoint:(CGPoint)loc;
+-(void)releaseHolder;
+-(float) getForce;
+-(b2Vec2) getVectorVeloctiy:(CGPoint) loc;
+-(float) getCocosAngle;
+-(float) getBox2dAngle;
+-(CGPoint) getFirePoint;
+-(void) setMinForce:(float)val;
+-(void)setMaxForce:(float)val;
+@end

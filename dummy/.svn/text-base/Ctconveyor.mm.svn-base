@@ -1,0 +1,164 @@
+//
+//  Ctconveyor.m
+//  SpaceDemo
+//
+//  Created by Muhammed Ali Khan on 3/10/12.
+//  Copyright 2012 Exponere Entertainment. All rights reserved.
+//
+
+#import "Ctconveyor.h"
+#define CANNON @"belt.png"
+#define CANNON_BASE @"gear.png"
+#define ARROW_OUTER @"arrow_outer.png"
+#define ARROW_INNER @"gear.png"
+#define PLUME_IMAGE @"plume.png"
+
+#import "Constants.h"
+#pragma mark - Ctconveyor
+@implementation Ctconveyor
+
+
+-(id) init
+{
+	if( (self=[super init])) {
+        /*
+         rotion vals are as follows:
+         * North: -90
+         * South: -270 | 90 but never these two values
+         * East: 0
+         * West: -180
+         */
+		
+		right = [CCSprite spriteWithFile:CANNON];
+		[self addChild:right z:0 tag:1];
+		//right.anchorPoint = ccp(0.9,0.2);
+        
+        CCSprite* cannon_base = [CCSprite spriteWithFile:CANNON_BASE];
+		//[self addChild:cannon_base z:0 tag:4];
+		cannon_base.position =  ccp(40,height(right)/2-30);
+		
+        CCSprite *arrow_base = [CCSprite spriteWithFile:ARROW_INNER];
+        arrow_base.position = ccp(width(right)-40,height(right)/2-30);
+        cannon_base.scale = 0.5f;
+        arrow_base.scale = 0.5f;
+        CCRotateBy *rotateAction=[CCRotateBy actionWithDuration:100 angle:5000];
+        CCRotateBy *rotateAction2=[CCRotateBy actionWithDuration:100 angle:5000];
+        [arrow_base runAction:rotateAction];
+        [cannon_base runAction:rotateAction2];
+        
+        [right addChild:arrow_base];
+         [right addChild:cannon_base];
+	}
+	return self;
+}
+
+-(void) setPhysicsBody:(b2Body *)body
+{
+	body_ = body;
+}
+
+
+-(b2Body *) getPhysicsBody
+{
+	return body_;
+}
+
+-(b2Fixture *) getb2Fixture
+{
+	return _myFixture;
+}
+
+
+-(void ) createphysics:(Ctconveyor *)spt x_co:(float)x y_co:(float)y angle:(int)angle 
+{
+    CGPoint pos;
+    pos.x=x;
+    pos.y=y;
+    sp=spt;
+    b2BodyDef bodyDef;
+	bodyDef.type = b2_staticBody;
+    
+    right=[CCSprite spriteWithFile:@"gear.png"];
+    right.position=ccp(viewportSize.width - 850, 540);
+    left=[CCSprite spriteWithFile:@"gear.png"];
+    left.position=ccp(viewportSize.width - 850, 540);
+    
+    // can have the point where ever we want
+    
+	bodyDef.position = [CTUtility toMeters:ccp(x , y)];
+	bodyDef.userData = right;
+    bodyDef.fixedRotation = true;
+    
+    //Define a box shape and assign it to the body fixture
+    b2PolygonShape dynamicBox;
+    dynamicBox.SetAsBox(right.contentSize.width/PTM_RATIO/2,
+                        right.contentSize.height/PTM_RATIO/20);
+	//b2CircleShape dynamicBox;
+	//CGFloat radius = ((width(sprite)/PTM_RATIO) * 0.5f);
+	//dynamicBox.m_radius = radius;
+	
+	b2FixtureDef fixtureDef;
+	fixtureDef.shape = &dynamicBox;
+	fixtureDef.friction = 1.0f;
+	fixtureDef.restitution = 0.0f;
+	fixtureDef.density = 1.0f;
+	
+	
+	body_ = world->CreateBody(&bodyDef);
+    _myFixture = body_->CreateFixture(&fixtureDef);
+	body_->CreateFixture(&fixtureDef);
+    
+    
+	
+}
+
+-(void) setWorld:(b2World*)aWorld {
+    world = aWorld;
+}
+
+// this method will only get called if the sprite is batched.
+// return YES if the physics values (angles, position ) changed
+// If you return NO, then nodeToParentTransform won't be called.
+-(BOOL) dirty
+{
+	return YES;
+}
+
+// returns the transform matrix according the Chipmunk Body values
+-(CGAffineTransform) nodeToParentTransform
+{	
+	b2Vec2 pos  = body_->GetPosition();
+	
+	float x = pos.x * PTM_RATIO;
+	float y = pos.y * PTM_RATIO;
+	
+	if ( !1 ) {
+		x += _anchorPointInPoints.x;
+		y += _anchorPointInPoints.y;
+	}
+	
+	// Make matrix
+	float radians = body_->GetAngle();
+	float c = cosf(radians);
+	float s = sinf(radians);
+	
+	if( ! CGPointEqualToPoint(_anchorPointInPoints, CGPointZero) ){
+		x += c*-_anchorPointInPoints.x + -s*-_anchorPointInPoints.y;
+		y += s*-_anchorPointInPoints.x + c*-_anchorPointInPoints.y;
+	}
+	
+	// Rot, Translate Matrix
+	_transform = CGAffineTransformMake( c,  s,
+									   -s,	c,
+									   x,	y );	
+	
+	return _transform;
+}
+
+-(void) dealloc
+{
+	// 
+	[super dealloc];
+}
+
+@end
